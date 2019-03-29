@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Inna Khatskevich](https://up.htmlacademy.ru/adaptive/16/user/527159).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев](https://up.htmlacademy.ru/adaptive/16/user/63947).
 
 ---
 
