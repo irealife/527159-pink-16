@@ -1,0 +1,40 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    background-color: yellow;
+  }
+}
+
+.site-list__link {
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: #6d3750;
+  }
+}
+
+.site-list__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid #ffffff;
+}
