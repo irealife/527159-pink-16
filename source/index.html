@@ -3,83 +3,86 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
+    <div class="site-wrapper">
+      <div class="container">
+        <header class="page-header">
+          <nav class="main-nav">
+            <include class="main-nav__headline" src="../img/logo-pink-white-mobile.svg" alt="Пинк"></include>
+            <button class="main-nav__toggle main-nav--open visually-hidden" type="button">Открыть меню</button>
+            <button class="main-nav__toggle main-nav--close visually-hidden" type="button">Закрыть меню</button>
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                  <a class="site-list__link">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="www.htmlacademy.ru">HTML Academy</a>
+                </li>
+              </ul>
+          </nav>
+        </header>
 
-    <header class="page-header">
-
-      <nav class="main-nav">
-        <p class="main-nav__headline">Pink</p>
-        <button class="main-nav__toggle main-nav--open" type="button">Открыть меню</button>
-        <button class="main-nav__toggle main-nav--close" type="button">Закрыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-      </nav>
-    </header>
-
-    <main class="page-main">
-      <h1 class="visually-hidden">Пинк</h1>
-      <a class="page-main__logo">
-        <img class="page-main__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
-      </a>
-      <section class="app-save">
-        <h2 class="visually-hidden">Скачать приложение</p>
-        <button class="app-save__button" type="button">Скачать приложение</button>
-            <ul class="app-save__os-list">
-              <li class="app-save__item">
-                <a class="app-save__link app-save--apple">
-                  <img class="app-save__img" src="http://placehold.it/20x20" width="20" height="20" alt="apple">
-                </a>
-              </li>
-              <li class="app-save__item">
-                <a class="app-save__link app-save--android">
-                  <img class="app-save__img" src="http://placehold.it/20x20" width="20" height="20" alt="android">
-                </a>
-              </li>
-              <li class="app-save__item">
-                <a class="app-save__link app-save--windows">
-                  <img class="app-save__img" src="http://placehold.it/20x20" width="20" height="20" alt="windows">
-                </a>
-              </li>
-            </ul>
-        <p class="app-save__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
-      <section class="advantages">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages__first-slogan">Устали от серости мегаполиса?</p>
-        <p class="advantages__second-slogan">Нам есть, что вам предложить!</p>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h2>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h2>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h2>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-      </section>
-      <section class="reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <img class="reviews__img-tel" src="http://placehold.it/100x150" width="100" height="150" alt="phone">
-      </section>
-    </main>
-
+        <main class="page-main">
+          <h1 class="visually-hidden">Пинк</h1>
+          <a class="page-main__logo">
+            <img class="page-main__logo-image" src="img/bg-back-mobile@1x.jpg" width="320" height="396" alt="Пинк">
+          </a>
+          <section class="app-save">
+            <h2 class="visually-hidden">Скачать приложение</h2>
+            <button class="app-save__button" type="button">Скачать приложение</button>
+              <ul class="app-save__os-list">
+                <li class="app-save__item">
+                  <a class="app-save__link app-save--apple">
+                    <img class="app-save__img" src="http://placehold.it/20x20" width="20" height="20" alt="apple">
+                  </a>
+                </li>
+                <li class="app-save__item">
+                  <a class="app-save__link app-save--android">
+                    <img class="app-save__img" src="http://placehold.it/20x20" width="20" height="20" alt="android">
+                  </a>
+                </li>
+                <li class="app-save__item">
+                  <a class="app-save__link app-save--windows">
+                    <img class="app-save__img" src="http://placehold.it/20x20" width="20" height="20" alt="windows">
+                  </a>
+                </li>
+              </ul>
+            <p class="app-save__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </section>
+          <section class="advantages">
+            <h2 class="visually-hidden">Наши преимущества</h2>
+            <p class="advantages__first-slogan">Устали от серости мегаполиса?</p>
+            <p class="advantages__second-slogan">Нам есть, что вам предложить!</p>
+              <ul class="advantages__list">
+                <li class="advantages__item">
+                  <h3 class="advantages__title">Поднимает настроение</h2>
+                  <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+                <li class="advantages__item">
+                  <h3 class="advantages__title">Меняет мир вокруг</h2>
+                  <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </li>
+                <li class="advantages__item">
+                  <h3 class="advantages__title">Заводит новых друзей</h2>
+                  <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+              </ul>
+          </section>
+          <section class="reviews">
+            <h2 class="visually-hidden">Отзывы</h2>
+            <img class="reviews__img-tel" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="phone">
+          </section>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
