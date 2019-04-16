@@ -1,0 +1,28 @@
+.research {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin: 20px;
+  }
+
+  .research__text {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    width: auto;
+  }
+
+  .research__text {
+    width: 530px;
+  }
+}

@@ -1,3 +1,8 @@
+.page-photo {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-photo__background {
   height: 170px;
   background: url("../img/bg-back-mobile@1x.jpg");
@@ -16,4 +21,28 @@
   line-height: 30px;
   text-align: center;
   margin: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-photo {
+    width: 660px;
+  }
+
+  .page-photo__description {
+    width: 470px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-photo {
+    width: 1200px;
+  }
+
+  .page-photo__description {
+    width: 600px;
+  }
 }

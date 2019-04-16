@@ -8,6 +8,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
+
+
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
@@ -35,3 +37,9 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("include", function () {
+  return gulp.src(" ")
+  .pipe(posthtml([ ]))
+  .pipe(gulp.dest(" "));
+});
