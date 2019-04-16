@@ -1,4 +1,42 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-main__logo-image {
   width: 320px;
   height: 396px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .page-main__logo-image {
+    width: 660px;
+    height: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-main__wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .page-main__publicity {
+    height: 744px;
+  }
+
+  .page-main__logo-image {
+    width: 940px;
+    height: 744px;
+  }
 }

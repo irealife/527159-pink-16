@@ -31,3 +31,29 @@
   padding-top: 29px;
   padding-bottom: 34px;
 }
+
+.app-save__os-list {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-save__slogan {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .app-save {
+    width: 300px;
+    margin-top: -620px;
+    margin-bottom: 0;
+    z-index: 1;
+  }
+
+  .app-save__slogan {
+    display: block;
+    color: #ffffff;
+  }
+}
