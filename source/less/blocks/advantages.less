@@ -1,14 +1,38 @@
-.advantages {
-  margin: 0;
-  padding: 20px;
-  background-color: #f2f2f2;
+.advantages__slogan {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.advantages__wrapper-slogan {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages__first-slogan,
 .advantages__second-slogan {
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
   text-align: center;
+}
+
+.advantages__main-mobile {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.advantages__wrapper-main-mobile {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages__list-mobile {
@@ -27,32 +51,99 @@
   text-align: center;
 }
 
+.advantages__img-mobile {
+  display: block;
+  margin: 0 auto;
+}
+
 .advantages__main-desktop {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .advantages {
-    margin-top: 249px;
-  }
-
-  .advantages__main-mobile {
+  .advantages__wrapper-main-mobile {
     display: flex;
     flex-direction: row-reverse;
+    width: 620px;
+  }
+
+  .advantages__wrapper-slogan {
+    width: 620px;
+  }
+
+  .advantages__slogan {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .advantages__first-slogan,
+  .advantages__second-slogan {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+  }
+
+  .advantages__second-slogan {
+    width: 340px;
+    margin: 0 auto;
+  }
+
+  .advantages__img-align {
+    width: 310px;
+  }
+
+  .advantages__img-mobile {
+    display: block;
+    margin: 0;
+    width: 270px;
+  }
+
+  .advantages__list-mobile {
+    width: 310px;
+    padding-top: 76px;
+  }
+
+  .advantages__title-mobile {
+    text-align: left;
+  }
+
+  .advantages__description-mobile {
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .advantages {
-    margin-top: 0;
-  }
-
   .advantages__main-mobile {
     display: none;
   }
 
   .advantages__main-desktop {
     display: block;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .advantages__wrapper-main-desktop {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantages__wrapper-slogan {
+    width: 940px;
+  }
+
+  .advantages__first-slogan,
+  .advantages__second-slogan {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+  }
+
+  .advantages__second-slogan {
+    width: 420px;
   }
 
   .advantages__list-desktop {
