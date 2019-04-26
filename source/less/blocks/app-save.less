@@ -1,12 +1,30 @@
 .app-save {
-  background-color: #1d2631;
-  padding-top: 28px;
-  margin-top: -7px;
+  width: 100%;
+  height: 670px;
+  background-color: #2d3d4e;
+  background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 112px, center -65px;
+}
+
+.app-save__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-save__block {
+  padding-top: 427px;
 }
 
 .app-save__button {
   display: flex;
-  padding: 20px 40px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 35px;
+  padding-right: 35px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 700;
@@ -20,6 +38,17 @@
   border: 3px solid #ffffff;
   cursor: pointer;
   background-color: #1d2631;
+  margin-bottom: 30px;
+}
+
+.app-save__os-list {
+  list-style: none;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 17px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .app-save__description {
@@ -28,16 +57,7 @@
   width: 250px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 29px;
-  padding-bottom: 34px;
-}
-
-.app-save__os-list {
-  list-style: none;
-  margin: 20px;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 36px;
 }
 
 .app-save__slogan {
@@ -46,14 +66,90 @@
 
 @media (min-width: @tablet-width) {
   .app-save {
+    width: 100%;
+    height: 620px;
+    background-color: #2d3d4e;
+    background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -20px 75px, center -108px;
+  }
+
+  .app-save__wrapper {
+    width: 620px;
+    max-width: 100%;
+  }
+
+  .app-save__block {
     width: 300px;
-    margin-top: -620px;
-    margin-bottom: 0;
-    z-index: 1;
+    padding-top: 94px;
   }
 
   .app-save__slogan {
     display: block;
     color: #ffffff;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .app-save__button {
+    margin-top: 32px;
+    margin-bottom: 47px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .app-save__os-list {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 29px;
+  }
+
+  .app-save__description {
+    font-size: 18px;
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app-save {
+    width: 100%;
+    background: none;
+    background-image: none;
+    margin-top: -882px;
+    margin-bottom: 15px;
+  }
+
+  .app-save__wrapper {
+    width: 940px;
+  }
+
+  .app-save__block {
+    padding-top: 0;
+  }
+
+  .app-save__slogan {
+    font-size: 50px;
+    line-height: 60px;
+    width: 300px;
+  }
+
+  .app-save__button {
+    font-size: 21px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-top: 52px;
+    margin-bottom: 67px;
+  }
+
+  .app-save__description {
+    font-size: 18px;
+    width: 300px;
+    margin-top: 48px;
   }
 }

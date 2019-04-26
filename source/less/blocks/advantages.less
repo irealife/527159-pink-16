@@ -1,14 +1,41 @@
-.advantages {
-  margin: 0;
-  padding: 20px;
-  background-color: #f2f2f2;
+.advantages__slogan {
+  background-color: #ffffff;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.advantages__wrapper-slogan {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages__first-slogan,
 .advantages__second-slogan {
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.advantages__main-mobile {
+  width: 100%;
+  padding-top: 47px;
+  background: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center -36px;
+  background-color: #f2f2f2;
+}
+
+.advantages__wrapper-main-mobile {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages__list-mobile {
@@ -17,14 +44,36 @@
   padding: 0;
 }
 
+.advantages__item-mobile {
+  margin-top: 38px;
+}
+
 .advantages__title-mobile {
   font-size: 18px;
   line-height: 10px;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages__description-mobile {
   text-align: center;
+  margin-top: 19px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.advantages__img-align {
+  height: 319px;
+  overflow: hidden;
+}
+
+.advantages__img-mobile {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages__main-desktop {
@@ -32,27 +81,109 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantages {
-    margin-top: 249px;
+  .advantages__wrapper-main-mobile {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 620px;
+  }
+
+  .advantages__wrapper-slogan {
+    width: 620px;
+  }
+
+  .advantages__slogan {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .advantages__first-slogan,
+  .advantages__second-slogan {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+  }
+
+  .advantages__second-slogan {
+    width: 340px;
+    margin: 0 auto;
   }
 
   .advantages__main-mobile {
-    display: flex;
-    flex-direction: row-reverse;
+    background-position: center -24px;
+  }
+
+  .advantages__img-align {
+    width: 310px;
+    height: 481px;
+    margin-top: -46px;
+    overflow: hidden;
+  }
+
+  .advantages__img-mobile {
+    display: block;
+    margin: 0;
+    width: 270px;
+  }
+
+  .advantages__list-mobile {
+    width: 310px;
+  }
+
+  .advantages__item-mobile {
+    margin-top: 31px;
+    margin-bottom: 42px;
+  }
+
+  .advantages__title-mobile {
+    text-align: left;
+  }
+
+  .advantages__description-mobile {
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .advantages {
-    margin-top: 0;
-  }
-
   .advantages__main-mobile {
     display: none;
   }
 
   .advantages__main-desktop {
     display: block;
+    width: 100%;
+    padding-top: 0;
+    background: url("../../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: left 0;
+    background-color: #f2f2f2;
+  }
+
+  .advantages__wrapper-main-desktop {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantages__wrapper-slogan {
+    width: 940px;
+  }
+
+  .advantages__slogan {
+    padding-top: 66px;
+    padding-bottom: 77px;
+  }
+
+  .advantages__first-slogan,
+  .advantages__second-slogan {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+  }
+
+  .advantages__second-slogan {
+    width: 420px;
   }
 
   .advantages__list-desktop {
@@ -64,7 +195,7 @@
   }
 
   .advantages__item-desktop {
-    width: 240px;
+    width: 295px;
     text-align: center;
   }
 
@@ -72,10 +203,22 @@
     font-size: 30px;
     line-height: 30px;
     font-weight: 700;
+    margin-right: 0;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    margin-left: 2px;
+  }
+
+  .advantages__item-desktop:nth-child(3) .advantages__title-desktop {
+    width: 232px;
+    margin-left: 28px;
+    margin-right: -76px;
   }
 
   .advantages__description-desktop {
+    width: 248px;
     font-size: 18px;
     line-height: 30px;
+    margin-left: 23px;
   }
 }
