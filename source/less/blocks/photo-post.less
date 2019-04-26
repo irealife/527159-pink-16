@@ -4,9 +4,6 @@
 }
 
 .photo-post__wrapper {
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -18,12 +15,19 @@
 }
 
 .photo-post__item {
-  margin: 20px;
+  width: 280px;
   background-color: #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 19px;
 }
 
 .photo-post__info {
-  padding: 25px 16px;
+  padding-top: 11px;
+  padding-left: 17px;
+  padding-right: 0;
+  padding-bottom: 20px;
 }
 
 .photo-post__user {
@@ -37,9 +41,13 @@
   text-transform: uppercase;
 }
 
+.photo-post__description {
+  margin: 0;
+}
+
 .photo-post__like {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   padding-left: 32px;
   font-size: 12px;
   text-transform: uppercase;
@@ -51,8 +59,8 @@
     width: 13px;
     height: 13px;
     position: absolute;
-    left: 0;
-    top: 6px;
+    left: 1px;
+    top: 5px;
     background: url("../../img/icon-heart.svg");
     background-repeat: no-repeat;
   }
@@ -79,32 +87,28 @@
 
   .photo-post__info {
     position: relative;
-    padding: 30px;
+    margin-top: 6px;
+    padding-bottom: 24px;
+    padding-left: 27px;
+    width: 240px;
   }
 
-  .photo-post__item:nth-child(1) .photo-post__like {
-    position: absolute;
-    top: 13px;
-    right: 50px;
-
-    &::after {
-      right: -25px;
-    }
-  }
-
-  .photo-post__item:nth-child(1) {
-    display: block;
-    width: 620px;
-  }
-
-  .photo-post__item:nth-child(1) img {
-    width: 660px;
-    margin: 0 -20px;
+  .photo-post__item:nth-child(1) .photo-post__info {
+    width: 593px;
   }
 
   .photo-post__item {
     width: 300px;
-    margin: 20px 0;
+    min-height: 458px;
+    margin-bottom: 18px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .photo-post__item:nth-child(1) {
+    display: block;
+    margin-bottom: 49px;
+    width: 620px;
   }
 
   .photo-post__img {
@@ -112,16 +116,32 @@
     height: 300px;
   }
 
+  .photo-post__item:nth-child(1) img {
+    width: 660px;
+    height: 509px;
+  }
+
   .photo-post__description {
-    margin-top: 3px;
+    margin-top: 0;
   }
 
   .photo-post__like {
     padding-left: 0;
+    margin-top: 13px;
 
     &::after {
       right: 0;
       left: auto;
+    }
+  }
+
+  .photo-post__item:nth-child(1) .photo-post__like {
+    position: absolute;
+    top: 0;
+    right: 59px;
+
+    &::after {
+      right: -31px;
     }
   }
 }
@@ -135,24 +155,30 @@
     width: 940px;
   }
 
+  .photo-post__item {
+    width: 300px;
+    min-height: 557px;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
   .photo-post__item:nth-child(1) {
     display: block;
     width: 940px;
   }
 
-  .photo-post__item:nth-child(1) img {
-    width: 1200px;
-    margin: 0 -130px;
-  }
-
-  .photo-post__item {
-    width: 300px;
-    margin: 0;
-    margin-bottom: 50px;
-  }
-
   .photo-post__img {
     width: 300px;
     height: 400px;
+  }
+
+  .photo-post__item:nth-child(1) img {
+    width: 1200px;
+    height: 505px;
+    margin: 0 -130px;
+  }
+
+  .photo-post__item:nth-child(1) .photo-post__info {
+    width: 910px;
   }
 }
