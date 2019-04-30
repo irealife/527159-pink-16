@@ -91,9 +91,17 @@
   border-bottom: 1px solid #000000;
 }
 
-.main-nav__logo img {
-  width: 75px;
-  height: 22px;
+.main-nav__logo svg {
+  width: 142px;
+  height: 24px;
+}
+
+.main-nav__logo-tablet {
+  display: none;
+}
+
+.main-nav__logo-desktop {
+  display: none;
 }
 
 .main-nav--nojs .main-nav__toggle {
@@ -130,10 +138,18 @@
     height: 110px;
   }
 
-  .main-nav__logo img {
+  .main-nav__logo svg {
     width: 146px;
     height: 100px;
-    margin-top: -8px;
+    margin-top: -34px;
+  }
+
+  .main-nav__logo-mobile {
+    display: none;
+  }
+
+  .main-nav__logo-tablet {
+    display: inline-block;
   }
 }
 
@@ -159,28 +175,36 @@
     background: none;
   }
 
+  .main-nav__logo-mobile {
+    display: none;
+  }
+  
+  .main-nav__logo-desktop {
+    display: inline-block;
+  }
+
   .main-nav__wrapper-desktop {
     width: 100%;
     height: 1100px;
     background-color: #283645;
-    background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 146px 208px, center 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/iphone-hand-desktop@2x.png"), url("../../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
       background-size: 1050px auto, 2560px auto;
     }
   }
 
   .main-nav__wrapper-desktop-photo {
     height: 395px;
-    background: url("../../img/bg-back-desktop@1x.jpg");
+    background: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px auto;
     }
   }
@@ -192,7 +216,7 @@
     background-position: center 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px auto;
     }
   }
