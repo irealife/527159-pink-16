@@ -1,10 +1,10 @@
 .app-save {
   width: 100%;
-  height: 670px;
+  height: 730px;
   background-color: #2d3d4e;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: left 112px, center -65px;
+  background-position: left 175px, center -3px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
@@ -21,7 +21,8 @@
 }
 
 .app-save__block {
-  padding-top: 427px;
+  margin-top: -68px;
+  padding-top: 488px;
 }
 
 .app-save__button {
@@ -42,8 +43,18 @@
   border-radius: 50px;
   border: 3px solid #ffffff;
   cursor: pointer;
-  background-color: #1d2631;
+  background-color: transparent;
   margin-bottom: 30px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: rgba(210, 40, 86, 1);
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: rgba(210, 40, 86, 0.7);
+  }
 }
 
 .app-save__os-list {
@@ -54,10 +65,6 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-}
-
-.app-save__icon-apple {
-  margin-left: 5px;
 }
 
 .app-save__icon-android {
@@ -86,11 +93,11 @@
 @media (min-width: @tablet-width) {
   .app-save {
     width: 100%;
-    height: 620px;
+    height: 730px;
     background-color: #2d3d4e;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: -20px 75px, center -108px;
+    background-position: -20px 185px, center 0px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
@@ -105,7 +112,8 @@
 
   .app-save__block {
     width: 300px;
-    padding-top: 94px;
+    padding-top: 202px;
+    margin-top: -111px;
   }
 
   .app-save__slogan {

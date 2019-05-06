@@ -5,7 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/normalize.css" type="text/css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/style.min.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper">
@@ -13,10 +13,12 @@
           <div class="main-nav__wrapper-desktop">
             <nav class="main-nav main-nav--closed main-nav--nojs">
             <div class="main-nav__wrapper">
-              <div class="main-nav__logo">
-                <svg class="main-nav__logo-general" width="145px" height="23px">
-                  <use xlink:href="img/sprite.svg#logo-main"></use>
-                </svg>
+              <div class="main-nav__logo-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+                </picture>
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
               </div>
                 <ul class="main-nav__list site-list">
@@ -50,22 +52,21 @@
                       <li class="app-save__item">
                         <a class="app-save__link">
                           <svg class="app-save__icon-apple" width="56" height="56">
-                            <use xlink:href="img/sprite.svg#icon-os-apple"></use>
+                            <use xlink:href="img/sprite.svg#icon-apple"></use>
                           </svg>
                         </a>
                       </li>
                       <li class="app-save__item">
                         <a class="app-save__link">
                           <svg class="app-save__icon-android" width="43" height="48">
-                            <use xlink:href="img/sprite.svg#icon-os-android"></use>
-                          </svg>
-                        </a>
+                            <use xlink:href="img/sprite.svg#icon-android"></use>
+                          </svg>                      
                       </li>
                       <li class="app-save__item">
                         <a class="app-save__link">
                           <svg class="app-save__icon-windows" width="44" height="42">
-                            <use xlink:href="img/sprite.svg#icon-os-windows"></use>
-                          </svg>
+                            <use xlink:href="img/sprite.svg#icon-microsoft"></use>
+                          </svg>                        
                         </a>
                       </li>
                     </ul>
@@ -98,7 +99,10 @@
                           </li>
                         </ul>
                         <div class="advantages__img-align">
-                          <img class="advantages__img-mobile" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="phone">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+                              <img class="advantages__img-mobile" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x">
+                            </picture>
                         </div>
                       </div>
                     </div>
@@ -106,17 +110,26 @@
                       <div class="advantages__wrapper-main-desktop">
                         <ul class="advantages__list-desktop">
                         <li class="advantages__item-desktop">
-                          <img class="advantages__img-desktop" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                              <img class="advantages__img-desktop" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x">
+                            </picture>
                           <p class="advantages__title-desktop">Поднимает настроение</p>
                           <p class="advantages__description-desktop">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                         </li>
                         <li class="advantages__item-desktop">
-                          <img class="advantages__img-desktop" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                              <img class="advantages__img-desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x">
+                            </picture>
                           <p class="advantages__title-desktop">Меняет мир вокруг</p>
                           <p class="advantages__description-desktop">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                         </li>
                         <li class="advantages__item-desktop">
-                          <img class="advantages__img-desktop" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                              <img class="advantages__img-desktop" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x">
+                            </picture>
                           <p class="advantages__title-desktop">Заводит новых друзей</p>
                           <p class="advantages__description-desktop">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                         </li>
@@ -129,10 +142,10 @@
                   <div class="research__wrapper">
                     <div class="research__timer-general">
                       <svg class="research__img-timer" width="298" height="345">
-                        <use xlink:href="img/sprite.svg#timer"></use>
+                        <use xlink:href="img/sprite.svg#icon-timer"></use>
                       </svg>
                       <svg class="research__img-diagram" width="253" height="253">
-                        <use xlink:href="img/sprite.svg#diagram"></use>
+                        <use xlink:href="img/sprite.svg#icon-editor-diagram-fill"></use>
                       </svg>
                       <p class="research__img-24">24</p>
                     </div>
@@ -149,10 +162,12 @@
 
         <footer class="page-footer-index">
           <div class="page-footer-index__wrapper">
-            <div class="page-footer__logo">
-                <svg class="page-footer__logo-icon" width="147" height="40">
-                  <use xlink:href="img/sprite.svg#logo-footer"></use>
-                </svg>
+            <div class="page-footer__logo-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+                <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="75" height="22" alt="Пинк">
+              </picture>
             </div>
             <div class="page-footer__social social">
               <ul class="social__list">
@@ -190,23 +205,6 @@
           </div>
         </footer>
     </div>
-
-    <script>
-        var navMain = document.querySelector('.main-nav');
-        var navToggle = document.querySelector('.main-nav__toggle');
-
-        navMain.classList.remove('main-nav--nojs');
-
-        navToggle.addEventListener('click', function() {
-          if (navMain.classList.contains('main-nav--closed')) {
-            navMain.classList.remove('main-nav--closed');
-            navMain.classList.add('main-nav--opened');
-          } else {
-            navMain.classList.add('main-nav--closed');
-            navMain.classList.remove('main-nav--opened');
-          }
-        });
-    </script>
-
+    <script src="js/app.js"></script>
   </body>
 </html>
