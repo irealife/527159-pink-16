@@ -1,0 +1,136 @@
+.tariff {
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 40px;
+  background: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center -36px;
+  background-color: #f2f2f2;
+  margin-bottom: 43px;
+}
+
+.tariff__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tariff__pink-mobile {
+  width: 100%;
+  padding-top: 40px;
+  margin-bottom: 31px;
+}
+
+.tariff__name-stroke {
+  position: relative;
+  height: 96px;
+  background-color: rgba(40, 54, 69, 1);
+}
+
+.tariff__name-tariff {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "ХИТ";
+    color: #ffffff;
+    // transform: 45deg;
+    font-weight: 300;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 73px;
+    background-image: url(../img/bg-hit.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.tariff__name {
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.tariff__coin {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.tariff__option-stroke {
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.tariff__option-name {
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(40, 54, 69, 1);
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 21px;
+}
+
+.tariff__option {
+  padding-left: 15px;
+}
+
+.tariff__option-chek-yes {
+  width: 27px;
+  height: 27px;
+  fill: #3dc644;
+}
+
+.tariff__option-chek-no {
+  width: 27px;
+  height: 27px;
+  fill: #f25b26;
+}
+
+.tariff__pink-table {
+  display: none;
+}
+
+.tariff__control-mobile {
+  font-size: 0;
+  text-align: center;
+  margin-left: 19px;
+}
+
+.tariff__control-mobile label{
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 19px;
+  vertical-align: middle;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    border: 3px solid rgba(40, 54, 69, 1);
+    background-color: #ffffff;
+    margin-left: -3px;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tariff__wrapper {
+    width: 620px;
+  }
+}

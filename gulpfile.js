@@ -38,6 +38,10 @@ gulp.task("css", function () {
 gulp.task("normalize", function () {
   return gulp.src("source/css/normalize.css")
     .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename("normalize.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"));
 });
 
 gulp.task("images", function () {
