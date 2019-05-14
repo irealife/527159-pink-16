@@ -185,7 +185,7 @@
           <section class="photo-call">
             <h2 class="visually-hidden">Призыв</h2>
             <div class="photo-call__wrapper">
-              <p class="photo-call__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+              <p class="photo-call__description">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне! </p>
             </div>
           </section>
           <section class="photo-editor">
@@ -203,11 +203,11 @@
                 </picture>
                 <form class="photo-editor__post-tools" method="GET" action="https://echo.htmlacademy.ru">
                   <legend class="visually-hidden">Обрезание</legend>
-                  <fieldset class="photo-editor__crop">
+                  <fieldset class="photo-editor__instrument photo-editor__crop">
                     <svg class="photo-editor__icon" width="48" height="48">
                       <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
                     </svg>
-                    <div class="photo-editor__range-controls">
+                    <div class="photo-editor__range-controls photo-editor__range-controls-tablet">
                       <div class="photo-editor__scale">
                         <div class="photo-editor__bar"></div>
                       </div>
@@ -215,11 +215,11 @@
                     </div>
                   </fieldset>
                   <legend class="visually-hidden">Заливка</legend>
-                  <fieldset class="photo-editor__fill">
+                  <fieldset class="photo-editor__instrument photo-editor__fill">
                     <svg class="photo-editor__icon" width="48" height="48">
                       <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
                     </svg>
-                    <div class="photo-editor__range-controls">
+                    <div class="photo-editor__range-controls photo-editor__range-controls-tablet">
                       <div class="photo-editor__scale">
                         <div class="photo-editor__bar"></div>
                       </div>
@@ -227,17 +227,23 @@
                     </div>
                   </fieldset>
                   <legend class="visually-hidden">Контрастность</legend>
-                  <fieldset class="photo-editor__contrast">
+                  <fieldset class="photo-editor__instrument photo-editor__contrast">
                     <svg class="photo-editor__icon" width="32" height="32">
                       <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
                     </svg>
-                    <div class="photo-editor__range-controls">
+                    <div class="photo-editor__range-controls photo-editor__range-controls-tablet">
                       <div class="photo-editor__scale">
                         <div class="photo-editor__bar"></div>
                       </div>
                       <div class="photo-editor__toggle"></div>
                     </div>
                   </fieldset>
+                  <div class="photo-editor__range-controls">
+                    <div class="photo-editor__scale">
+                      <div class="photo-editor__bar"></div>
+                    </div>
+                    <div class="photo-editor__toggle"></div>
+                  </div>
                   <button type="submit" class="photo-editor__button photo-editor__button-post">Запостить</button>
                   <button type="submit" class="photo-editor__button photo-editor__button-cancel">Отмена</button>
                 </form>

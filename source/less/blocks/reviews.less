@@ -72,6 +72,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .reviews {
+    margin-bottom: 10px;
+  }
+
   .reviews__wrapper {
     max-width: 620px;
   }
@@ -102,5 +106,67 @@
 
   .reviews__control-mobile {
     margin-top: 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    padding-bottom: 23px;
+  }
+
+  .reviews__wrapper {
+    max-width: 1200px;
+  }
+
+  .reviews__users {
+    position: relative;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 117px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 42px;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      top: 96px;
+      left: -120px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 42px;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      top: 96px;
+      right: -120px;
+    }
+  }
+
+  .reviews__users-name {
+    position: relative;
+    font-size: 24px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 79px;
+      height: 64px;
+      background-image: url("../img/icon-quotes.svg");
+      top: -237px;
+      right: 306px;
+    }
+  }
+
+  .reviews__users-job {
+    font-size: 18px;
+    margin-bottom: -8px;
+  }
+
+  .reviews__control-mobile {
+    display: none;
   }
 }

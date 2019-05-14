@@ -178,7 +178,7 @@
                   <div class="tariff__wrapper">
                     <table class="tariff__pink-mobile">
                       <tr class="tariff__name-stroke">
-                        <th colspan="2" class="tariff__name-tariff">
+                        <th colspan="2" class="tariff__name-tariff tariff__hit">
                           <p class="tariff__name">Стандарт</p>
                           <p class="tariff__coin">3,99 USD</p>
                         </th>
@@ -211,9 +211,18 @@
                     <table class="tariff__pink-table">
                       <tr class="tariff__name-stroke">
                         <th></th>
-                        <th class="tariff__name-tariff">База<span>1,99 USD</span></th>
-                        <th class="tariff__name-tariff">Стандарт<span>3,99 USD</span></th>
-                        <th class="tariff__name-tariff">Анлим<span>9,99 USD</span></th>
+                        <th class="tariff__name-tariff">
+                          <p class="tariff__name">База</p>
+                          <p class="tariff__coin">1,99 USD</p>
+                        </th>
+                        <th class="tariff__name-tariff tariff__hit">
+                          <p class="tariff__name">Стандарт</p>
+                          <p class="tariff__coin">3,99 USD</p>
+                        </th>
+                        <th class="tariff__name-tariff">
+                          <p class="tariff__name">Анлим</p>
+                          <p class="tariff__coin">9,99 USD</p>
+                        </th>
                       </tr>
                       <tr class="tariff__option-stroke">
                         <td class="tariff__option-name">Розовый фильтр</td>
@@ -223,44 +232,44 @@
                           </svg>
                         </td>
                         <td class="tariff__option">
-                          <svg class="tariff__option-chek-no" width="27" height="27">
-                            <use xlink:href="img/sprite.svg#icon-no"></use>
+                          <svg class="tariff__option-chek-yes" width="27" height="27">
+                            <use xlink:href="img/sprite.svg#icon-yes"></use>
                           </svg>
                         </td>
                         <td class="tariff__option">
-                          <svg class="tariff__option-chek-no" width="27" height="27">
-                            <use xlink:href="img/sprite.svg#icon-no"></use>
+                          <svg class="tariff__option-chek-yes" width="27" height="27">
+                            <use xlink:href="img/sprite.svg#icon-yes"></use>
                           </svg>
                         </td>
                       </tr>
                       <tr class="tariff__option-stroke">
                         <td class="tariff__option-name">Смайлики</td>
                         <td class="tariff__option">
-                          <svg class="tariff__option-chek-yes" width="27" height="27">
-                            <use xlink:href="img/sprite.svg#icon-yes"></use>
-                          </svg>
-                        </td>
-                        <td class="tariff__option">
-                          <svg class="tariff__option-chek-yes" width="27" height="27">
-                            <use xlink:href="img/sprite.svg#icon-yes"></use>
-                          </svg>
-                        </td>
-                        <td class="tariff__option">
                           <svg class="tariff__option-chek-no" width="27" height="27">
                             <use xlink:href="img/sprite.svg#icon-no"></use>
+                          </svg>
+                        </td>
+                        <td class="tariff__option">
+                          <svg class="tariff__option-chek-yes" width="27" height="27">
+                            <use xlink:href="img/sprite.svg#icon-yes"></use>
+                          </svg>
+                        </td>
+                        <td class="tariff__option">
+                          <svg class="tariff__option-chek-yes" width="27" height="27">
+                            <use xlink:href="img/sprite.svg#icon-yes"></use>
                           </svg>
                         </td>
                       </tr>
                       <tr class="tariff__option-stroke">
                         <td class="tariff__option-name">Комментарии</td>
                         <td class="tariff__option">
-                          <svg class="tariff__option-chek-yes" width="27" height="27">
-                            <use xlink:href="img/sprite.svg#icon-yes"></use>
+                          <svg class="tariff__option-chek-no" width="27" height="27">
+                            <use xlink:href="img/sprite.svg#icon-no"></use>
                           </svg>
                         </td>
                         <td class="tariff__option">
-                          <svg class="tariff__option-chek-yes" width="27" height="27">
-                            <use xlink:href="img/sprite.svg#icon-yes"></use>
+                          <svg class="tariff__option-chek-no" width="27" height="27">
+                            <use xlink:href="img/sprite.svg#icon-no"></use>
                           </svg>
                         </td>
                         <td class="tariff__option">
@@ -281,20 +290,30 @@
                   <h2 class="visually-hidden">Контакты</h2>
                   <div class="contacts__wrapper">
                     <p class="contacts__questions">Остались вопросы? Свяжитесь с нами!</p>
-                    <p class="contacts__label">Звоните:</p>
-                    <p class="contacts__fact">+7 (812) 555-66-66</p>
-                    <p class="contacts__label">Пишите:</p>
-                    <p class="contacts__fact">mail@htmlacademy.ru</p>
-                    <p class="contacts__label">Приезжайте в гости:</p>
-                    <p class="contacts__fact">ул. Большая Конюшенная, 19/8</p>
+                    <div class="contacts__number-wrapper">
+                      <div class="contacts__tel-wrapper">
+                        <p class="contacts__label">Звоните:</p>
+                        <p class="contacts__fact">+7 (812) 555-66-66</p>
+                      </div>
+                      <div class="contacts__email-wrapper">
+                        <p class="contacts__label">Пишите:</p>
+                        <p class="contacts__fact">mail@htmlacademy.ru</p>
+                      </div>
+                      <div class="contacts__adress-wrapper">
+                        <p class="contacts__label">Приезжайте в гости:</p>
+                      <p class="contacts__fact">ул. Большая Конюшенная, 19/8</p>
+                      </div>
+                    </div>
                   </div>
                 </section>
                 <section class="map">
-                  <h2 class="visually-hidden">Как до нас добраться</h2>
+                  <div class="map__wrapper">
+                    <h2 class="visually-hidden">Как до нас добраться</h2>
+                  </div>
                 </section>
         </main>
 
-        <footer class="page-footer-index">
+        <footer class="page-footer-index page-footer-photo">
           <div class="page-footer-index__wrapper">
             <div class="page-footer__logo-wrapper">
               <picture>
