@@ -16,7 +16,7 @@
   line-height: 30px;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 
 .contacts__number-wrapper {
@@ -40,6 +40,24 @@
   line-height: 26px;
 }
 
+.contacts__fact-link {
+  &:hover {
+    color: rgba(40, 54, 69, 1);
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
+}
+
+.contacts__email-wrapper {
+  margin-top: -22px;
+}
+
+.contacts__adress-wrapper {
+  margin-top: -17px;
+}
+
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
     max-width: 620px;
@@ -61,15 +79,16 @@
   }
 
   .contacts__tel-wrapper {
-    margin-top: -7px;
+    margin-top: 12px;
   }
 
   .contacts__email-wrapper {
-    margin-top: -7px;
+    margin-top: 12px;
+    margin-right: -18px;
   }
 
   .contacts__adress-wrapper {
-    margin-top: 7px;
+    margin-top: 8px;
     width: 280px;
   }
 }
@@ -87,8 +106,9 @@
   }
 
   .contacts__number-wrapper {
-    padding-left: 125px;
-    padding-right: 98px;
+    margin-top: 33px;
+    padding-left: 127px;
+    padding-right: 118px;
   }
 
   .contacts__tel-wrapper {

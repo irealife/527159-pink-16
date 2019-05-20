@@ -32,10 +32,7 @@
 
   &::before {
     position: absolute;
-    content: "ХИТ";
-    color: #ffffff;
-    // transform: 45deg;
-    font-weight: 300;
+    content: "";
     top: 0;
     left: 0;
     width: 74px;
@@ -43,6 +40,16 @@
     background-image: url(../img/bg-hit.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "ХИТ";
+    color: #ffffff;
+    transform: rotate(-45deg);
+    font-weight: 300;
+    top: 16px;
+    left: 10px;
   }
 }
 
@@ -159,8 +166,13 @@
     width: 150px;
   }
 
-  .tariff__hit::before {
-    background-position: 0px -14px;
+  .tariff__hit {
+    &::before {
+      background-position: 0px -14px;
+    }
+    &::after {
+      top: 8px;
+    }
   }
 
   .tariff__name {

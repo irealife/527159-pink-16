@@ -14,6 +14,33 @@
   padding: 0;
 }
 
+.photo-post__block-panorama {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border: 2px solid #d22856;
+    background-color: #d22856;
+    width: 138px;
+    height: 31px;
+    top: 0;
+    right: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "Панорама дня";
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    top: 6px;
+    right: 20px;
+  }
+}
+
 .photo-post__item {
   width: 280px;
   background-color: #f2f2f2;
@@ -91,10 +118,25 @@
     padding-bottom: 24px;
     padding-left: 27px;
     width: 240px;
+    display: flex;
+    flex-direction: column;
+    min-height: 110px;
+  }
+
+  .photo-post__block-panorama {
+
+    &::before {
+      top: 58px;
+    }
+
+    &::after {
+      top: 64px;
+    }
   }
 
   .photo-post__item:nth-child(1) .photo-post__info {
     width: 593px;
+    min-height: 75px;
   }
 
   .photo-post__item {
@@ -127,12 +169,16 @@
 
   .photo-post__like {
     padding-left: 0;
-    margin-top: 13px;
+    margin-top: auto;
 
     &::after {
       right: 0;
       left: auto;
     }
+  }
+
+  .photo-post__item:nth-child(1) .photo-post__like {
+    margin-top: 13px;
   }
 
   .photo-post__item:nth-child(1) .photo-post__like {
@@ -153,6 +199,17 @@
 
   .photo-post__list {
     width: 940px;
+  }
+
+  .photo-post__block-panorama {
+    
+    &::before {
+      top: 55px;
+    }
+
+    &::after {
+      top: 61px;
+    }
   }
 
   .photo-post__item {
@@ -180,5 +237,6 @@
 
   .photo-post__item:nth-child(1) .photo-post__info {
     width: 910px;
+    min-height: 50px;
   }
 }

@@ -128,22 +128,46 @@
     &::after {
       position: absolute;
       content: "";
-      width: 22px;
-      height: 42px;
-      background-image: url("../img/icon-review-arrow-left.svg");
-      top: 96px;
-      left: -120px;
+      width: 28px;
+      height: 28px;
+      border-left: 2px solid rgba(40, 54, 69, 0.3);
+      border-top: 2px solid rgba(40, 54, 69, 0.3);
+      transform: rotate(-45deg);
+      top: 102px;
+      left: -114px;
     }
+
+      &:hover::after {
+        border-left-color: rgba(40, 54, 69, 0.6);
+        border-top-color: rgba(40, 54, 69, 0.6);
+      }
+
+      &:active::after {
+        border-left-color: rgba(40, 54, 69, 0.1);
+        border-top-color: rgba(40, 54, 69, 0.1);
+      }
 
     &::before {
       position: absolute;
       content: "";
-      width: 22px;
-      height: 42px;
-      background-image: url("../img/icon-review-arrow-right.svg");
-      top: 96px;
-      right: -120px;
+      width: 28px;
+      height: 28px;
+      border-right: 2px solid rgba(40, 54, 69, 0.3);
+      border-top: 2px solid rgba(40, 54, 69, 0.3);
+      transform: rotate(45deg);
+      top: 102px;
+      right: -114px;
     }
+
+      &:hover::before {
+        border-right-color: rgba(40, 54, 69, 0.6);
+        border-top-color: rgba(40, 54, 69, 0.6);
+      }
+
+      &:active::before {
+        border-right-color: rgba(40, 54, 69, 0.1);
+        border-top-color: rgba(40, 54, 69, 0.1);
+      }
   }
 
   .reviews__users-name {
