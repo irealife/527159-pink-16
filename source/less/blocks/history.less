@@ -43,7 +43,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 2px;
-} 
+}
 
 .history__info-label {
   line-height: 30px;
@@ -141,7 +141,7 @@
   left: 10px;
   width: 25px;
   height: 25px;
-  background-image: url(../img/icon-yes.svg);
+  background-image: url("../img/icon-yes.svg");
   fill: #d22856;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -222,8 +222,8 @@
 }
 
 .history__label-app {
-    position: relative;
-  
+  position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -239,14 +239,14 @@
 
 .history__app-input:checked + .history__label-app::after {
   content: "";
-    position: absolute;
-    top: -3px;
-    left: 2px;
-    width: 30px;
-    height: 30px;
-    background-image: url(../img/icon-map-marker.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  position: absolute;
+  top: -3px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .history__app-input:hover + .history__label-app::before,
@@ -279,7 +279,7 @@
   font-size: 18px;
   line-height: 30px;
   text-align: left;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 2px solid #b5b9be;
   box-sizing: border-box;
   padding-left: 18px;
@@ -341,7 +341,7 @@
   color: #d22856;
 }
 
-@media (min-width:@tablet-width) {
+@media (min-width: @tablet-width) {
   .history__wrapper {
     min-width: 620px;
   }
@@ -354,7 +354,7 @@
     width: 500px;
     text-align: center;
     margin-top: 93px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .history__price-tablet {
@@ -463,16 +463,16 @@
   }
 
   .history__label-tel::after {
-      position: absolute;
-      content: "";
-      top: -41px;
-      right: 60px;
-      width: 20px;
-      height: 20px;
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      fill: #d22856;
+    position: absolute;
+    content: "";
+    top: -41px;
+    right: 60px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    fill: #d22856;
   }
 
   .history__label-email::after {
@@ -486,7 +486,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     fill: #d22856;
-}
+  }
 
   .history__info-introduce-contacts {
     width: 72%;
@@ -570,7 +570,7 @@
   }
 }
 
-@media (min-width:@desktop-width) {
+@media (min-width: @desktop-width) {
   .history__wrapper {
     width: 940px;
   }
