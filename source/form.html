@@ -73,6 +73,40 @@
                     <input class="history__info-introduce history__info-patronymic" id="user-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
                   </p>
                 </section>
+                <section class="history__block-general-app">
+                  <fieldset class="history__block-app">
+                    <legend class="history__legend">С каким приложением путешествовали?</legend>
+                    <ul class="history__list-app">
+                      <li class="history__item-app history__item-app-active">
+                        <input class="visually-hidden history__app-input app-input-radio" type="radio" name="app-group" value="ios" id="app-ios" checked>
+                        <label class="history__label history__label-app" for="app-ios">Pink для iOS</label>
+                      </li>
+                      <li class="history__item-app">
+                        <input class="visually-hidden history__app-input app-input-radio" type="radio" name="app-group" value="android" id="app-android">
+                        <label class="history__label history__label-app" for="app-android">Pink на Android</label>
+                      </li>
+                      <li class="history__item-app">
+                        <input class="visually-hidden history__app-input app-input-radio" type="radio" name="app-group" value="win" id="app-win">
+                        <label class="history__label history__label-app" for="app-win">Windows Phone</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </section>
+                <section class="history__block-general-contacts">
+                  <fieldset class="history__block-contacts">
+                    <legend class="history__legend history__legend-mobile">Контактная информация</legend>
+                    <div class="history__contacts-wrapper">
+                      <div class="history__contacts history__contacts-tel">
+                        <label class="history__info-label history__label-contacts history__label-tel">Номер телефона</label>
+                        <input class="history__info-introduce history__info-introduce-contacts history__tel" id="user-tel" type="text" name="tel" placeholder="Номер, пожалуйста">
+                      </div>
+                      <div class="history__contacts history__contacts-email">
+                        <label class="history__info-label history__label-contacts history__label-email">Адрес почты</label>
+                        <input class="history__info-introduce history__info-introduce-contacts history__email" id="user-email" type="text" name="email" placeholder="Введите почту *">
+                      </div>
+                    </div>
+                  </fieldset>
+                </section>
                 <section class="history__block-general-progress">
                   <fieldset class="history__block-progress">
                     <legend class="history__legend history__legend-progress">Ваши безбашенные достижения в путешествии</legend>
@@ -102,40 +136,6 @@
                           <label class="history__label history__progress-label" for="filter-hotel">Разгромил отель</label>
                         </li>
                       </ul>
-                  </fieldset>
-                </section>
-                <section class="history__block-general-contacts">
-                  <fieldset class="history__block-contacts">
-                    <legend class="history__legend history__legend-mobile">Контактная информация</legend>
-                    <div class="history__contacts-wrapper">
-                      <div class="history__contacts history__contacts-tel">
-                        <label class="history__info-label history__label-contacts history__label-tel">Номер телефона</label>
-                        <input class="history__info-introduce history__info-introduce-contacts history__tel" id="user-tel" type="text" name="tel" placeholder="Номер, пожалуйста">
-                      </div>
-                      <div class="history__contacts history__contacts-email">
-                        <label class="history__info-label history__label-contacts history__label-email">Адрес почты</label>
-                        <input class="history__info-introduce history__info-introduce-contacts history__email" id="user-email" type="text" name="email" placeholder="Введите почту *">
-                      </div>
-                    </div>
-                  </fieldset>
-                </section>
-                <section class="history__block-general-app">
-                  <fieldset class="history__block-app">
-                    <legend class="history__legend">С каким приложением путешествовали?</legend>
-                    <ul class="history__list-app">
-                      <li class="history__item-app history__item-app-active">
-                        <input class="visually-hidden history__app-input app-input-radio" type="radio" name="app-group" value="ios" id="app-ios" checked>
-                        <label class="history__label history__label-app" for="app-ios">Pink для iOS</label>
-                      </li>
-                      <li class="history__item-app">
-                        <input class="visually-hidden history__app-input app-input-radio" type="radio" name="app-group" value="android" id="app-android">
-                        <label class="history__label history__label-app" for="app-android">Pink на Android</label>
-                      </li>
-                      <li class="history__item-app">
-                        <input class="visually-hidden history__app-input app-input-radio" type="radio" name="app-group" value="win" id="app-win">
-                        <label class="history__label history__label-app" for="app-win">Windows Phone</label>
-                      </li>
-                    </ul>
                   </fieldset>
                 </section>
                 <section class="history__block-general-reviews">
