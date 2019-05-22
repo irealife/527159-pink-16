@@ -1,0 +1,130 @@
+.contacts {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.contacts__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__questions {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.contacts__number-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__label {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contacts__fact {
+  font-size: 24px;
+  font-weight: 300;
+  color: #d22856;
+  text-align: center;
+  margin-top: 6px;
+  line-height: 26px;
+}
+
+.contacts__fact-link {
+  &:hover {
+    color: rgba(40, 54, 69, 1);
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
+}
+
+.contacts__email-wrapper {
+  margin-top: -22px;
+}
+
+.contacts__adress-wrapper {
+  margin-top: -17px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    max-width: 620px;
+  }
+
+  .contacts__questions {
+    font-size: 40px;
+    line-height: 48px;
+    width: 440px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 48px;
+  }
+
+  .contacts__number-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__tel-wrapper {
+    margin-top: 12px;
+  }
+
+  .contacts__email-wrapper {
+    margin-top: 12px;
+    margin-right: -18px;
+  }
+
+  .contacts__adress-wrapper {
+    margin-top: 8px;
+    width: 280px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    max-width: 1200px;
+  }
+
+  .contacts__questions {
+    font-size: 50px;
+    line-height: 60px;
+    width: 500px;
+    margin-top: 64px;
+  }
+
+  .contacts__number-wrapper {
+    margin-top: 33px;
+    padding-left: 127px;
+    padding-right: 118px;
+  }
+
+  .contacts__tel-wrapper {
+    margin-top: 5px;
+  }
+
+  .contacts__email-wrapper {
+    margin-top: 5px;
+    order: 1;
+  }
+
+  .contacts__adress-wrapper {
+    margin-top: 5px;
+  }
+
+  .contacts__label {
+    margin-bottom: 26px;
+  }
+}
