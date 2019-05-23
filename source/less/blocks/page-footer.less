@@ -24,6 +24,17 @@
 .page-footer__logo-mobile {
   width: 146px;
   height: auto;
+  fill: #283645;
+
+  &:hover .page-footer__logo-hover {
+    fill: #d22856;
+  }
+
+  &:active,
+  &:active .page-footer__logo-hover {
+    fill: #283645;
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social {
@@ -49,10 +60,6 @@
   .page-footer-index__wrapper {
     width: 620px;
     flex-direction: row;
-  }
-
-  .page-footer__logo-mobile {
-    width: 146px;
   }
 
   .page-footer__social {
@@ -90,6 +97,17 @@
     display: block;
     width: 146px;
     height: auto;
+    fill: #283645;
+
+    &:hover .page-footer__logo-hover {
+      fill: #d22856;
+    }
+
+    &:active,
+    &:active .page-footer__logo-hover {
+      fill: #283645;
+      opacity: 0.3;
+    }
   }
 
   .page-footer__social {
